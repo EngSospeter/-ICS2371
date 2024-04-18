@@ -1,5 +1,6 @@
-#include <stdio.h>
+// I mantained the Adresses
 
+#include <stdio.h>
 int main() {
     FILE *inputFile, *outputFile;
     char buffer[100];
@@ -7,7 +8,7 @@ int main() {
     // Append new data to input.txt
     printf("Enter some text: ");
     fgets(buffer, sizeof(buffer), stdin);
-    inputFile = fopen("C:\\Users\\kidsa\\Searches\\dsac\\ICS2371\\input.txt", "a"); // "a" mode for append
+    inputFile = fopen("C:\\Users\\sospe\\Documents\\ECE\\ECE3.2\\ICS2371 Structural Programming\\input.txt", "a"); // "a" mode for append
     if (inputFile == NULL) {
         printf("Error appending to input.txt\n");
         return 1;
@@ -16,14 +17,14 @@ int main() {
     fclose(inputFile);
 
     
-    inputFile = fopen("C:\\Users\\kidsa\\Searches\\dsac\\ICS2371\\input.txt", "r");
+    inputFile = fopen("C:\\Users\\sospe\\Documents\\ECE\\ECE3.2\\ICS2371 Structural Programming\\input.txt", "r");
     if (inputFile == NULL) {
         printf("Error opening input.txt\n");
         return 1;
     }
 
     
-    outputFile = fopen("C:\\Users\\kidsa\\Searches\\dsac\\ICS2371\\output.txt", "w");
+    outputFile = fopen("C:\\Users\\sospe\\Documents\\ECE\\ECE3.2\\ICS2371 Structural Programming\\output.txt", "w");
     if (outputFile == NULL) {
         printf("Error creating/output.txt\n");
         fclose(inputFile);
